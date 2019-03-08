@@ -11,6 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="hoverfx.css" rel="stylesheet">
     <link href="theme.css" rel="stylesheet">
+    <link href="jstest.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -266,7 +268,27 @@
 
     <div class="jumbotron">
       <div class="container">
-        ...
+        <!-- Javascript testing -->
+        <input type="text" id="myinput" value="text data"></input>
+        <button id="trbutton"> Click to Add </button>&nbsp;<button id="tr2button"> Click to Remove </button>
+
+        <div id="testrun"></div>
+        <script type="text/javascript">
+          var name="testrun";
+          document.getElementById('trbutton').onclick=function() {
+            document.getElementById(name).innerHTML="Addition made";
+          }
+            document.getElementById('tr2button').onclick=function() {
+              document.getElementById(name).innerHTML="";
+          }
+        </script>
+
+        <div id="testcircle"></div>
+        <script type="text/javascript">
+          document.getElementById('testcircle').onclick=function(){
+            document.getElementById('testcircle').style.display="none";
+          }
+        </script>
       </div>
     </div>
 
