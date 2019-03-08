@@ -269,18 +269,26 @@
     <div class="jumbotron">
       <div class="container">
         <!-- Javascript testing -->
-        <input type="text" id="myinput" value="text data"></input>
-        <button id="trbutton"> Click to Add </button>&nbsp;<button id="tr2button"> Click to Remove </button>
+        <input type="text" id="myinput" value=""></input>
+        <button id="trbutton"> Click to Add </button>
 
         <div id="testrun"></div>
         <script type="text/javascript">
-          var name="testrun";
-          document.getElementById('trbutton').onclick=function() {
-            document.getElementById(name).innerHTML="Addition made";
+          var name=document.getElementById('myinput').value;
+            document.getElementById('trbutton').onclick=function() {
+              name=document.getElementById('myinput').value;
+              document.getElementById('testrun').innerHTML=name;
           }
-            document.getElementById('tr2button').onclick=function() {
-              document.getElementById(name).innerHTML="";
-          }
+
+          var arrayname=new Array();
+          arrayname[0]="Adam";
+          arrayname[1]="Bob";
+          arrayname[2]="Chris";
+          console.log(arrayname);
+          otherarray=["red,orange,yellow,green,blue,purple"];
+          otherarray.push("white");
+          console.log(otherarray);
+
         </script>
 
         <div id="testcircle"></div>
