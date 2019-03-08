@@ -269,34 +269,22 @@
     <div class="jumbotron">
       <div class="container">
         <!-- Javascript testing -->
-        <input type="text" id="myinput" value=""></input>
-        <button id="trbutton"> Click to Add </button>
 
-        <div id="testrun"></div>
+
         <script type="text/javascript">
-          var name=document.getElementById('myinput').value;
-            document.getElementById('trbutton').onclick=function() {
-              name=document.getElementById('myinput').value;
-              document.getElementById('testrun').innerHTML=name;
-          }
 
-          var arrayname=new Array();
-          arrayname[0]="Adam";
-          arrayname[1]="Bob";
-          arrayname[2]="Chris";
-          console.log(arrayname);
-          otherarray=["red,orange,yellow,green,blue,purple"];
-          otherarray.push("white");
-          console.log(otherarray);
+        var x=1, y=2;
+
+        if (x==1) {
+          alert("You are good");
+        }
+        else {
+          alert("You're a loser");
+        }
 
         </script>
 
-        <div id="testcircle"></div>
-        <script type="text/javascript">
-          document.getElementById('testcircle').onclick=function(){
-            document.getElementById('testcircle').style.display="none";
-          }
-        </script>
+
       </div>
     </div>
 
