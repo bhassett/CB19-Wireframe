@@ -269,17 +269,19 @@
     <div class="jumbotron">
       <div class="container">
         <!-- Javascript testing -->
-
+        <input id="weather">
+        <button id="mybutton"> Submit </button>
 
         <script type="text/javascript">
 
-        var x=1, y=2;
+        document.getElementById('mybutton').onclick=function() {
+          if (document.getElementById('weather').value=="rain") {
+            alert("it is raining");
+          }
+          else {
+            alert("it's not raining");
+          }
 
-        if (x==1) {
-          alert("You are good");
-        }
-        else {
-          alert("You're a loser");
         }
 
         </script>
