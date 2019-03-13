@@ -274,18 +274,29 @@
 
         <script type="text/javascript">
 
-        // var myarray=["red","green","blue"];
-        // for (var i=0;i<myarray.length;i++)
-        // {
-        //   alert(myarray[i]);
-        // }
+        // Create Object
+        var player = new Object();
 
-        var today=new Date();
-        alert(today);
+        // Object Properties
+        player.name="Fred";
+        player.score=10000;
+        player.rank=1;
 
-        var birthday=new Date(1973,12,21);
-        var o=birthday.getDate();
-        alert(o);
+        // Shorter object creation
+        var player1 = {name:"Fred", score:10000, rank:1};
+        var player2 = {name:"Sam", score:9000, rank:2};
+        // console.log(player1.name);
+        // console.log(player2.name);
+        // fucntion to display grouped data
+        function PlayerDetails () {
+          // display the info for each player
+          console.log(this.name+ " has a rank of:"+
+            this.rank+ " and a score of " + this.score);
+        }
+        player1.logDetails=PlayerDetails;
+        player2.logDetails=PlayerDetails;
+        player1.logDetails();
+        player2.logDetails();
 
         </script>
 
