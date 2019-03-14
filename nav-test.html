@@ -267,38 +267,11 @@
 
 
     <div class="jumbotron">
-      <div class="container">
+      <div id="container" class="container">
         <!-- Javascript testing -->
-        <input id="weather">
-        <button id="mybutton"> Submit </button>
 
-        <script type="text/javascript">
 
-        // Create Object
-        var player = new Object();
 
-        // Object Properties
-        player.name="Fred";
-        player.score=10000;
-        player.rank=1;
-
-        // Shorter object creation
-        var player1 = {name:"Fred", score:10000, rank:1};
-        var player2 = {name:"Sam", score:9000, rank:2};
-        // console.log(player1.name);
-        // console.log(player2.name);
-        // fucntion to display grouped data
-        function PlayerDetails () {
-          // display the info for each player
-          console.log(this.name+ " has a rank of:"+
-            this.rank+ " and a score of " + this.score);
-        }
-        player1.logDetails=PlayerDetails;
-        player2.logDetails=PlayerDetails;
-        player1.logDetails();
-        player2.logDetails();
-
-        </script>
 
 
       </div>
