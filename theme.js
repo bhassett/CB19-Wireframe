@@ -10,3 +10,8 @@ newp.innerHTML = "The very best of what you're looking for"
 
 document.getElementById('container') .appendChild(newh1);
 document.getElementById('container') .appendChild(newp);
+
+
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
